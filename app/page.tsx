@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 export default function Home() {
-  const [activePage, setActivePage] = useState<'home' | 'contact'>('home')
+  const [activePage, setActivePage] = useState<'home' | 'skills' | 'contact'>('home')
 
   return (
     <>
@@ -20,6 +20,14 @@ export default function Home() {
               className={`nav-link ${activePage === 'home' ? 'active' : ''}`}
             >
               Home
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => setActivePage('skills')}
+              className={`nav-link ${activePage === 'skills' ? 'active' : ''}`}
+            >
+              Skills
             </a>
           </li>
           <li>
@@ -50,6 +58,49 @@ export default function Home() {
             <h3>Hello, <span>World!</span></h3>
             <h1>Amanda Tasya Dedi</h1>
             <p>I&apos;m a first year computer science student at National University of Singapore.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className={`page-section ${activePage === 'skills' ? 'active' : ''}`} id="skills">
+        <div className="skills-section">
+          <div className="skills-container">
+            <h2>Skills & Expertise</h2>
+            <p>Technologies I work with</p>
+
+            <div className="skills-grid">
+              <div className="skill-card">
+                <div className="skill-icon">
+                  <i className="fa-brands fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <p>Backend development, data analysis, and automation</p>
+              </div>
+
+              <div className="skill-card">
+                <div className="skill-icon">
+                  <i className="fa-brands fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <p>Modern web applications with React and Next.js</p>
+              </div>
+
+              <div className="skill-card">
+                <div className="skill-icon">
+                  <i className="fa-solid fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Full-stack development with modern frameworks</p>
+              </div>
+
+              <div className="skill-card">
+                <div className="skill-icon">
+                  <i className="fa-solid fa-chart-line"></i>
+                </div>
+                <h3>Data Science</h3>
+                <p>Data analysis, visualization, and machine learning</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
