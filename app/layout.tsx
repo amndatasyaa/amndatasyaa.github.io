@@ -1,16 +1,11 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import RootLayoutClient from './layout-client'
 import './globals.css'
 
-const poppins = Poppins({
-  weight: ['300', '400', '500', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-})
-
 export const metadata: Metadata = {
-  title: 'Amanda | Portfolio',
-  description: 'Amanda - Computer Science Student & Developer',
+  title: 'Amanda Tasya Dedi | Aspiring Software Engineer',
+  description: 'Computer Science student at the National University of Singapore (NUS) seeking software engineering internships. Proficient in JavaScript, Python, React, and more.',
+  keywords: ['Software Engineer', 'Web Developer', 'NUS Computer Science', 'Internship', 'React Developer', 'Full-Stack Developer', 'Amanda Tasya Dedi', 'Singapore'],
 }
 
 export default function RootLayout({
@@ -18,15 +13,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
-      </head>
-      <body className={poppins.className}>{children}</body>
-    </html>
-  )
+  return <RootLayoutClient>{children}</RootLayoutClient>
 }
