@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
 
 :root {
-  --bg-color: #fff0f5;
-  --text-color: #5c3c4c;
-  --primary-color: #ff8fab;
-  --secondary-color: #f3a6b5;
-  --accent-color: #ffd700;
+  --bg-color: #f4f7f5;
+  --text-color: #333333;
+  --primary-color: #008080;
+  --secondary-color: #a2d5d5;
   --white: #ffffff;
-  --heading-font: 'Playfair Display', serif;
+  --heading-font: 'Lato', sans-serif;
   --body-font: 'Lato', sans-serif;
 }
 
@@ -495,7 +494,7 @@ h2::after {
 .rain-drop {
   position: absolute;
   font-family: 'Courier New', Courier, monospace;
-  color: #0f0;
+  color: var(--primary-color);
   font-size: 20px;
   animation: fall linear infinite;
 }
