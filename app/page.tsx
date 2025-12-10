@@ -41,7 +41,7 @@ export default function Home() {
           <div className="home-content">
             <h3>Hello, I&apos;m</h3>
             <h1>Amanda Tasya Dedi</h1>
-            <p>A passionate **Computer Science student at NUS** with a strong foundation in **software engineering principles** and a keen interest in **data science** and **machine learning**. Actively seeking **Data Science** or **Software Engineering Internships** to apply my skills in **web development**, **Python**, and **React** to build innovative solutions.</p>
+            <p>A passionate <strong>Computer Science student at NUS</strong> with a strong foundation in <strong>software engineering principles</strong> and a keen interest in <strong>data science</strong> and <strong>machine learning</strong>. Actively seeking <strong>Data Science</strong> or <strong>Software Engineering Internships</strong> to apply my skills in <strong>web development</strong>, <strong>Python</strong>, and <strong>React</strong> to build innovative solutions.</p>
             <div className="home-buttons">
               <a href="mailto:amandatasyadedi@gmail.com?subject=Resume Request&body=Hi Amanda, I would like to request a copy of your resume." className="btn btn-primary">Request Resume</a>
               <a href="#contact" className="btn btn-secondary">Contact Me</a>
@@ -62,7 +62,7 @@ export default function Home() {
       >
         <div className="about-section">
           <h2>About Me</h2>
-          <p>As a dedicated **Computer Science student at the National University of Singapore (NUS)**, I have a strong foundation in **programming, algorithms, and data structures**. I am particularly interested in **data science**, **machine learning**, and **full-stack web development**. My skills include **Python**, **React**, **JavaScript**, and various **software engineering tools and frameworks**. I am eager to contribute to a fast-paced team where I can grow my skills and make a real impact. I am a proactive learner, a strong collaborator, and I am excited to bring my technical abilities and enthusiasm to a challenging **internship role** in the tech industry.</p>
+          <p>As a dedicated <strong>Computer Science student at the National University of Singapore (NUS)</strong>, I have a strong foundation in <strong>programming, algorithms, and data structures</strong>. I am particularly interested in <strong>data science</strong>, <strong>machine learning</strong>, and <strong>full-stack web development</strong>. My skills include <strong>Python</strong>, <strong>React</strong>, <strong>JavaScript</strong>, and various <strong>software engineering tools and frameworks</strong>. I am eager to contribute to a fast-paced team where I can grow my skills and make a real impact. I am a proactive learner, a strong collaborator, and I am excited to bring my technical abilities and enthusiasm to a challenging <strong>internship role</strong> in the tech industry.</p>
           <button onClick={() => setShowScatterPlot(true)} className="btn btn-secondary" style={{ marginTop: '30px' }}>
             Show me the data!
           </button>
