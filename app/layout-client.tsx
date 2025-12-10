@@ -37,6 +37,7 @@ export default function RootLayoutClient({
           <a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
           <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
           <a href="/play" onClick={() => setIsMenuOpen(false)}>Play</a>
+          <a href="/notebook" onClick={() => setIsMenuOpen(false)}>Notebook</a>
         </div>
         <Hamburger isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
         {children}

@@ -51,6 +51,11 @@ export default function Home() {
               Play
             </a>
           </li>
+          <li>
+            <a href="/notebook" className="nav-link">
+              Notebook
+            </a>
+          </li>
         </ul>
       </nav>
 

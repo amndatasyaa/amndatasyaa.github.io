@@ -45,27 +45,23 @@ const NotebookPage = () => {
   }
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Client-side Jupyter Notebook</h1>
-      <Editor
-        value={code}
-        onValueChange={code => setCode(code)}
-        highlight={code => highlight(code, languages.python)}
-        padding={10}
-        style={{
-          fontFamily: '"Fira code", "Fira Mono", monospace',
-          fontSize: 16,
-          border: '1px solid #ddd',
-          borderRadius: '5px',
-          minHeight: '200px',
-        }}
-      />
-      <button onClick={runCode} style={{ marginTop: '10px' }} disabled={!pyodide}>
-        Run
-      </button>
-      <pre style={{ marginTop: '10px', background: '#f5f5f5', padding: '10px', borderRadius: '5px' }}>
-        {output}
-      </pre>
+    <div className="notebook-container">
+      <h1 className="notebook-title">Client-side Jupyter Notebook</h1>
+      <div className="notebook-cell">
+        <Editor
+          value={code}
+          onValueChange={code => setCode(code)}
+          highlight={code => highlight(code, languages.python, 'python')}
+          padding={10}
+          className="code-editor"
+        />
+        <button onClick={runCode} className="run-button" disabled={!pyodide}>
+          Run
+        </button>
+        <pre className="output-area">
+          {output}
+        </pre>
+      </div>
     </div>
   )
 }
