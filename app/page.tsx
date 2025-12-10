@@ -9,7 +9,7 @@ export default function Home() {
   const [showScatterPlot, setShowScatterPlot] = useState(false)
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.4, 0, 0.6, 1] } },
   }
 
   return (
