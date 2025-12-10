@@ -12,7 +12,7 @@ const GAME_HEIGHT = 600
 const GRAVITY = 0.6
 const JUMP_STRENGTH = 10
 const PIPE_WIDTH = 60
-const PIPE_GAP = 200
+const PIPE_GAP = 300
 const PIPE_SPAWN_RATE = 1500 // in ms
 
 const FlappyBirdGame = () => {
