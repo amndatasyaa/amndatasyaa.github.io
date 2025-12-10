@@ -62,29 +62,29 @@ export default function Home() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="home-inner">
-            <div className="profile-container">
-              <Image
-                src="/profile.jpg"
-                alt="Amanda Tasya Dedi - Aspiring Software Engineer"
-                className="profile-img"
-                width={450}
-                height={450}
-                priority
-              />
-            </div>
+        <div className="home">
+          <div className="profile-container">
+            <Image
+              src="/profile.jpg"
+              alt="Amanda Tasya Dedi - Aspiring Software Engineer"
+              className="profile-img"
+              width={450}
+              height={450}
+              priority
+            />
+          </div>
 
-            <div className="home-content">
-              <h3>Hello, I&apos;m</h3>
-              <h1>Amanda Tasya Dedi</h1>
-              <p>A Computer Science student at NUS, actively seeking a <strong>Data Science</strong> or <strong>Software Engineering Internship</strong> to apply my skills in web development and problem-solving.</p>
-              <div className="home-buttons">
-                <a href="mailto:amandatasyadedi@gmail.com?subject=Resume Request&body=Hi Amanda, I would like to request a copy of your resume." className="btn btn-primary">Request Resume</a>
-                <a href="#contact" className="btn btn-secondary">Contact Me</a>
-                <a href="/play" className="btn btn-secondary">Play Flappy Bird!</a>
-              </div>
+          <div className="home-content">
+            <h3>Hello, I&apos;m</h3>
+            <h1>Amanda Tasya Dedi</h1>
+            <p>A Computer Science student at NUS, actively seeking a <strong>Data Science</strong> or <strong>Software Engineering Internship</strong> to apply my skills in web development and problem-solving.</p>
+            <div className="home-buttons">
+              <a href="mailto:amandatasyadedi@gmail.com?subject=Resume Request&body=Hi Amanda, I would like to request a copy of your resume." className="btn btn-primary">Request Resume</a>
+              <a href="#contact" className="btn btn-secondary">Contact Me</a>
+              <a href="/play" className="btn btn-secondary">Play Flappy Bird!</a>
             </div>
           </div>
+        </div>
       </motion.section>
 
       <motion.section
