@@ -56,7 +56,7 @@ export default function Home() {
 
       <motion.section
         id="home"
-        className="page-section"
+        className="page-section home-section"
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
@@ -79,7 +79,7 @@ export default function Home() {
             <h1>Amanda Tasya Dedi</h1>
             <p>A Computer Science student at NUS, actively seeking a <strong>Data Science</strong> or <strong>Software Engineering Internship</strong> to apply my skills in web development and problem-solving.</p>
             <div className="home-buttons">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View Resume</a>
+              <a href="mailto:amandatasyadedi@gmail.com?subject=Resume Request&body=Hi Amanda, I would like to request a copy of your resume." className="btn btn-primary">Request Resume</a>
               <a href="#contact" className="btn btn-secondary">Contact Me</a>
               <a href="/play" className="btn btn-secondary">Play Flappy Bird!</a>
             </div>
@@ -254,10 +254,6 @@ export default function Home() {
                 <a href="mailto:amandatasyadedi@gmail.com">amandatasyadedi@gmail.com</a>
               </div>
 
-              <div className="contact-item">
-                <i className="fa-solid fa-phone"></i>
-                <span>+65 8308-3161</span>
-              </div>
             </div>
           </div>
         </div>

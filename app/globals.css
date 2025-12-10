@@ -115,6 +115,10 @@ body {
 }
 
 /* Home Section */
+.home-section {
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--secondary-color) 100%);
+}
+
 .home {
   display: flex;
   align-items: center;
@@ -127,8 +131,8 @@ body {
 }
 
 .profile-img {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 8px solid var(--white);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -148,7 +152,7 @@ body {
 
 .home-content h1 {
   font-family: var(--heading-font);
-  font-size: 64px;
+  font-size: 80px;
   color: var(--text-color);
   margin-bottom: 20px;
 }
