@@ -125,7 +125,7 @@ const FlappyBirdGame = () => {
     >
       <Background />
       <Bird birdPosition={birdPosition} />
-      <Pipes pipes={pipes} pipeWidth={PIPE_WIDTH} pipeGap={PIPE_GAP} />
+      <Pipes pipes={pipes} pipeWidth={PIPE_WIDTH} pipeGap={PIPE_GAP} gameHeight={GAME_HEIGHT} />
 
       <div className="game-info" style={{ position: 'absolute', top: '20px', left: '20px', color: 'var(--text-color)', fontSize: '24px', fontWeight: 'bold' }}>
         Score: {score}
