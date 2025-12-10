@@ -1,4 +1,11 @@
 import type { Metadata } from 'next'
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Flappy Bird | Amanda Tasya Dedi',
@@ -12,7 +19,7 @@ export default function GameLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   )
 }
