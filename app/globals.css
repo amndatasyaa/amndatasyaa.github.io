@@ -436,8 +436,14 @@ h2::after {
     width: 250px;
     height: 250px;
   }
+  .page-section {
+    padding: 80px 5%;
+  }
   .home-content h1 {
     font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
   }
   .navbar {
     padding: 15px 5%;
@@ -447,6 +453,74 @@ h2::after {
   }
   .skills-grid, .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 25px;
+  right: 5%;
+  z-index: 1001;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger .bar1,
+.hamburger .bar2,
+.hamburger .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.open .bar2 {
+  opacity: 0;
+}
+
+.hamburger.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.mobile-nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.mobile-nav-menu.open {
+  transform: translateY(0);
+}
+
+.mobile-nav-menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
   }
 }
 
