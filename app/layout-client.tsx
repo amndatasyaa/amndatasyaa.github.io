@@ -40,6 +40,49 @@ export default function RootLayoutClient({
           <a href="/notebook" onClick={() => setIsMenuOpen(false)}>Notebook</a>
         </div>
         <Hamburger isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+        <nav className="navbar">
+          <div className="logo">
+            <div className="logo-circle">AT</div>
+            <span className="logo-text">Amanda Tasya</span>
+          </div>
+          <ul className="nav-menu">
+            <li>
+              <a href="#home" className="nav-link">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="nav-link">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#education" className="nav-link">
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#skills" className="nav-link">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="nav-link">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="/play" className="nav-link">
+                Play
+              </a>
+            </li>
+            <li>
+              <a href="/notebook" className="nav-link">
+                Notebook
+              </a>
+            </li>
+          </ul>
+        </nav>
         {children}
       </body>
     </html>
