@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
 
 :root {
-  --bg-color: #f4f7f5;
+  --bg-color: #F8F8F8;
   --text-color: #333333;
-  --primary-color: #C678DD;
-  --secondary-color: #a2d5d5;
+  --primary-color: #2196F3;
+  --secondary-color: #e0e0e0;
   --white: #ffffff;
   --heading-font: 'Lato', sans-serif;
   --body-font: 'Lato', sans-serif;
@@ -29,13 +29,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  background: var(--white); /* Solid white background */
+  backdrop-filter: none; /* Remove blur */
   border-bottom: 1px solid var(--secondary-color);
   position: sticky;
   top: 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  box-shadow: none; /* Remove box-shadow */
 }
 
 .logo {
@@ -116,7 +117,7 @@ body {
 
 /* Home Section */
 .home-section {
-  background: linear-gradient(135deg, var(--bg-color) 0%, var(--secondary-color) 100%);
+  background: var(--bg-color); /* Solid background */
 }
 
 .home {
@@ -585,57 +586,61 @@ h2::after {
 
 /* Notebook Styles */
 .notebook-container {
-  max-width: 900px;
+  max-width: 980px;
   margin: 50px auto;
-  background-color: var(--white);
+  background-color: var(--bg-color);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  padding: 20px;
+  padding: 0; /* Remove padding here, cells will have it */
 }
 
 .notebook-title {
   font-family: var(--heading-font);
-  font-size: 36px;
+  font-size: 32px;
   color: var(--text-color);
-  margin-bottom: 30px;
+  margin: 20px 0;
   text-align: center;
 }
 
 .notebook-cell {
-  margin-bottom: 25px;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
+  background-color: var(--white);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  margin: 15px 20px;
+  padding: 0;
   overflow: hidden;
 }
 
 .code-editor {
-  background-color: #f8f8f8;
+  background-color: #f7f7f7; /* Light gray background for code */
   padding: 15px !important;
-  font-family: 'Fira Code', 'Fira Mono', monospace;
-  font-size: 15px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 14px;
   line-height: 1.5;
-  min-height: 120px;
-  border-bottom: 1px solid #e0e0e0;
-  white-space: pre-wrap; /* Ensures code wraps */
-  word-wrap: break-word; /* Ensures long words break */
+  min-height: 80px;
+  border: none; /* Remove border from editor itself */
+  outline: none; /* Remove outline on focus */
+  resize: vertical; /* Allow vertical resizing */
 }
 
 .run-button {
   display: block;
-  width: 100%;
-  padding: 12px 20px;
+  width: auto; /* Adjust width to fit content */
+  margin: 10px 20px; /* Margin to align with cells */
+  padding: 8px 15px;
   background-color: var(--primary-color);
   color: var(--white);
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 .run-button:hover {
-  background-color: #008ACA;
+  background-color: #0056b3; /* Darker shade of blue for hover */
 }
 
 .run-button:disabled {
@@ -644,13 +649,14 @@ h2::after {
 }
 
 .output-area {
-  background-color: #ffffff;
+  background-color: #ffffff; /* White background for output */
   padding: 15px;
-  font-family: 'Fira Code', 'Fira Mono', monospace;
-  font-size: 15px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 14px;
   line-height: 1.5;
   color: #333333;
-  min-height: 50px;
+  min-height: 30px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  border-top: 1px solid var(--secondary-color); /* Separator from code */
 }
