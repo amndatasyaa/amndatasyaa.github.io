@@ -31,11 +31,11 @@ export default function RootLayoutClient({
       <body className={`${poppins.className} ${konami ? 'matrix-theme' : ''}`}>
         {konami && <MatrixRain />}
         <div className={`mobile-nav-menu ${isMenuOpen ? 'open' : ''}`}>
-          <a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a>
-          <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
-          <a href="#education" onClick={() => setIsMenuOpen(false)}>Education</a>
-          <a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
-          <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+          <a href="/#home" onClick={() => setIsMenuOpen(false)}>Home</a>
+          <a href="/#about" onClick={() => setIsMenuOpen(false)}>About</a>
+          <a href="/#education" onClick={() => setIsMenuOpen(false)}>Education</a>
+          <a href="/#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
+          <a href="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
           <a href="/play" onClick={() => setIsMenuOpen(false)}>Play</a>
           <a href="/notebook" onClick={() => setIsMenuOpen(false)}>Notebook</a>
         </div>
@@ -47,27 +47,27 @@ export default function RootLayoutClient({
           </div>
           <ul className="nav-menu">
             <li>
-              <a href="#home" className="nav-link">
+              <a href="/#home" className="nav-link">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="nav-link">
+              <a href="/#about" className="nav-link">
                 About
               </a>
             </li>
             <li>
-              <a href="#education" className="nav-link">
+              <a href="/#education" className="nav-link">
                 Education
               </a>
             </li>
             <li>
-              <a href="#skills" className="nav-link">
+              <a href="/#skills" className="nav-link">
                 Skills
               </a>
             </li>
             <li>
-              <a href="#contact" className="nav-link">
+              <a href="/#contact" className="nav-link">
                 Contact
               </a>
             </li>
