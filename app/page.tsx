@@ -9,7 +9,7 @@ export default function Home() {
   const [showScatterPlot, setShowScatterPlot] = useState(false)
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.4, 0, 0.6, 1] } },
+    visible: { opacity: 1, y: 0 },
   }
 
   return (
@@ -23,6 +23,7 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
+        transition={{ duration: 0.8, ease: [0.4, 0, 0.6, 1] }}
         viewport={{ once: true }}
       >
         <div className="home">
@@ -56,6 +57,7 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
+        transition={{ duration: 0.8, ease: [0.4, 0, 0.6, 1] }}
         viewport={{ once: true }}
       >
         <div className="about-section">
@@ -73,6 +75,7 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
+        transition={{ duration: 0.8, ease: [0.4, 0, 0.6, 1] }}
         viewport={{ once: true }}
       >
         <div className="education-section">
@@ -91,6 +94,7 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
+        transition={{ duration: 0.8, ease: [0.4, 0, 0.6, 1] }}
         viewport={{ once: true }}
       >
         <div className="skills-section">
@@ -137,6 +141,7 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
+        transition={{ duration: 0.8, ease: [0.4, 0, 0.6, 1] }}
         viewport={{ once: true }}
       >
         <div className="projects-section">
@@ -192,6 +197,7 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
+        transition={{ duration: 0.8, ease: [0.4, 0, 0.6, 1] }}
         viewport={{ once: true }}
       >
         <div className="contact-section">
